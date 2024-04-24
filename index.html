@@ -1,0 +1,96 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="offer">
+                    <img class="logo" src="img/logo.png" alt="pic">
+                    <h1 class="title">С помощью нас <br>
+                        вы сможете создать то, о чем</h1>
+                        <span class="title_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволят Вам достичь
+                        огромного успеха. Мы верим в вас! И знаем это на
+                        все 100%. Вас не остановить!
+                    </p>
+                    <a href="#" class="btn">Узнать больше ...</a>
+                </div>
+                <div class="header_img">
+                    <img src="img/header-img.png" alt="pic">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <h2 class="main_title">Что Вам необходимо?</h2>
+            <div class="main_block">
+                <div class="blocks">
+                    <img src="img/f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <div class="container">
+            <h2 class="main_title">Форма заказа обратного звонка</h2>
+            <form class="form" >
+                <div><input class="form_input" id="name" type="text" placeholder="  Имя" required onsubmit="nameValidation()"><span class="check" id="check_name"></span></div>
+                <div><input class="form_input" id="tel" type="tel" placeholder="  Телефон" required onsubmit="telValidation()"><span class="check" id="check_tel"></span></div>
+                <div><input class="form_input" id="email" type="email" placeholder="  E-mail" required onsubmit="emailValidation()"><span class="check" id="check_email"></span></div>
+                <div><select name="product" id="product_select"  class="form_input" required onsubmit="themeValidation()">
+                    <option value="placeholdder">Выберите цвет</option>
+                    <option value="red">Красный</option>
+                    <option value="orange">Оранжевый</option>
+                    <option value="yellow">Жёлтый</option>   
+                </select><span class="check" id="check_product"></span></div> 
+                <button type="submit" class="form_btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <div class="container">
+            <h2 class="main_title">Форма заказа продукта или услуги</h2>
+            <form class="form" >
+                <input class="form_input" type="text" placeholder="  Имя" required pattern="^[А-Яа-яЁё\s]+$">
+                <input class="form_input" type="text" placeholder="  Введите свой E-mail" required>
+                <input class="form_input" type="tel" placeholder="  Телефон" required>
+                <input class="form_input" type="text" placeholder="  Какая тема Вас интересует?" required minlength="10" maxlength="300">
+                <button type="submit" class="form_btn">Отправить вопрос!</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="footer_text">© Все на этом сайте защищено</p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
